@@ -100,16 +100,16 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_tempo_vetro_2.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_vetro_3.jpg",
-                            "color": "Zielony",
+                            "wood": "Zielony",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_vetro_4.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         }
                     ]
                 },
@@ -141,71 +141,71 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_2.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_3.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_4.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_5.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_6.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_7.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_8.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_9.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_10.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_11.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_12.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         }
                     ]
                 },
@@ -249,7 +249,7 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_7.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         }
                     ]
                 },
@@ -293,7 +293,7 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_7.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         }
                     ]
                 },
@@ -337,7 +337,7 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_2.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         }
                     ]
                 },
@@ -367,7 +367,7 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_vetro_1.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         }
                     ]
                 },
@@ -397,7 +397,7 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_beczulka_1.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         }
                     ]
                 },
@@ -427,29 +427,29 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_coperto_1.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_2.jpg",
-                            "color": "Brązowy",
+                            "wood": "Brązowy",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_3.jpg",
-                            "color": "Brązowy",
+                            "wood": "Brązowy",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_4.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_5.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_6.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         }
                     ]
                 },
@@ -494,24 +494,24 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_babuni_2.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_3.jpg",
-                            "color": "Brązowy",
+                            "wood": "Brązowy",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_4.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_5.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_6.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         }
                     ]
                 },
@@ -542,29 +542,29 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_cubo_1.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_2.jpg",
-                            "color": "Zielony"
+                            "wood": "Zielony"
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_3.jpg",
-                            "color": "Zielony",
+                            "wood": "Zielony",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_4.jpg",
-                            "color": "Brązowy",
+                            "wood": "Brązowy",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_5.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_6.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         }
                     ]
                 },
@@ -595,19 +595,19 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_muro_1.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         },
                         {
                             "source": "assets/images/products/mlynek_muro_2.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_muro_4.jpg",
-                            "color": "Orange"
+                            "wood": "Orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_muro_5.jpg",
-                            "color": "Naturalny"
+                            "wood": "Naturalny"
                         }
                     ]
                 },
@@ -651,20 +651,20 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_retro_1.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_retro_2.jpg",
-                            "color": "Brązowy"
+                            "wood": "Brązowy"
                         },
                         {
                             "source": "assets/images/products/mlynek_retro_3.jpg",
-                            "color": "Brązowy",
+                            "wood": "Brązowy",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_retro_4.jpg",
-                            "color": "Brązowy",
+                            "wood": "Brązowy",
                             "gallery": false
                         }
                     ]
