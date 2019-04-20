@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main-header/>
+    <router-view class="content-wrap" :myJson="myJson"></router-view>
+    <main-footer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainHeader from './components/MainHeader.vue'
+import MainFooter from './components/MainFooter.vue'
+import json from './artsto_data.json'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    MainHeader,
+    MainFooter
+  },
+  data(){
+    return{
+      myJson: json
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.content-wrap {
+  max-width: 100%;
+  position: relative;
+  min-height: calc(100vh - 9.5rem);
+  padding-top: 5rem;
+  margin-bottom:7rem;
 }
 </style>
