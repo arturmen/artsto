@@ -172,7 +172,6 @@ export default {
 img {
   max-width: 75px;
   max-height: 75px;
-  /* border: 2px solid #d8b058; */
 }
 img:hover {
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
@@ -199,5 +198,13 @@ h4 {
   background: transparent;
   padding: 0 0 10px;
   border-bottom: 2px solid #d8b058;
+  position: relative !important;
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-family: 'Roboto', sans-serif !important;
+        color: #444;
+        font-weight: 600;
+        line-height: 1.5;
 }
 </style>

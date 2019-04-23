@@ -5,7 +5,8 @@
                 <a
                 id="logo"
                 href="/#/"><img src="../assets/images/logo/logo-artsto-dark.png"/></a>
-                <a class="pt-4 pr-5 float-right" href="/#/">GALERIA</a>
+                <a class="pt-4 pr-5 float-right" href="/#/gallery">GALERIA</a>
+                <a class="pt-4 pr-5 float-right" href="/#/products">PRODUKTY</a>
                 <a class="pt-4 pr-5 float-right" href="/#/">STRONA GŁÓWNA</a>
             </div>
         </header>

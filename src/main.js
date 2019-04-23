@@ -6,6 +6,10 @@ import vueHeadful from 'vue-headful';
 
 Vue.component('vue-headful', vueHeadful);
 
+import VueMasonry from 'vue-masonry-css'
+
+Vue.use(VueMasonry);
+
 Vue.use(BootstrapVue)
 
 import 'bootstrap/dist/css/bootstrap.css'
