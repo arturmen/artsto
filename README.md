@@ -1,5 +1,7 @@
 # artsto-page
 
+Project of Artsto Company Page made in vue.js
+
 ## Project setup
 ```
 npm install

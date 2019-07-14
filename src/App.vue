@@ -30,7 +30,7 @@ export default {
   max-width: 100%;
   position: relative;
   min-height: calc(100vh - 9.5rem);
-  padding-top: 5rem;
+  padding-top: 2rem;
   margin-bottom:7rem;
 }
 </style>

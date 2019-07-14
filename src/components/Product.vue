@@ -2,25 +2,28 @@
   <div>
     <vue-headful title="Produkt"/>
     <div id="product-container" class="row">
-      <div class="col-6 pt-5" style="margin-left: 6rem;">
-        <b-link v-b-modal.modal-img-big>
-            <b-img id="main-img" :title=name rounded class="shadow" :src="require('../' + image)"></b-img>
-        </b-link>
-        <b-modal id="modal-img-big" hide-header=true hide-footer=true>
-            <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image)"></b-img>
-        </b-modal>
-        <br>
+      <div class="col-1 pt-5" style="margin-left: 6rem;">
         <div id="small-images-container">
           <b-link><b-img
             id="small-image"
             v-for="img in images"
             v-bind:key="img.source"
-            class="mt-3 mx-1"
-            rounded
-            v-on:click.prevent="image = img.source"
+            v-on:pointerover="image = img.source"
+            v-on:pointerout="image = imageClicked"
+            class="mt-2 mx-1"
+            v-on:click.prevent="image = img.source; imageClicked = img.source"
             :src="require('../' + img.source)"
           /></b-link>
         </div>
+      </div>
+      <div class="col-5 pt-5">
+        <b-link v-b-modal.modal-img-big>
+            <b-img id="main-img" :title=name class="shadow-lg" :src="require('../' + image)"></b-img>
+        </b-link>
+        <b-modal id="modal-img-big" hide-header=true hide-footer=true>
+            <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image)"></b-img>
+        </b-modal>
+        <br>
       </div>
       <div class="col-5 py-5 px-5">
         <h4 id="title">{{name}}</h4>
@@ -28,19 +31,21 @@
         <h4>Kolory drewna:</h4>
         <p class="d-inline mt-3" v-for="wood in woods" v-bind:key="wood.name">
           <b-link><b-img
-            class="mb-3 mx-1"
-            rounded
+            class="mb-3 mx-1 img-material"
             :src="require('../' + wood.thumbnail)"
-            v-on:click="onWoodClick(wood.name)"
+            v-on:click="onWoodClick(wood.name, true)"
+            v-on:pointerover="onWoodClick(wood.name, false)"
+            v-on:pointerout="image = imageClicked"
           ></b-img></b-link>
         </p>
         <h4>Kolory części metalowych:</h4>
         <p class="d-inline mt-3" v-for="metal in metals" v-bind:key="metal.name">
           <b-link><b-img
-            class="mb-3 mx-1"
-            rounded
+            class="mb-3 mx-1 img-material"
             :src="require('../' + metal.thumbnail)"
-            v-on:click="onMetalClick(metal.name)"
+            v-on:click="onMetalClick(metal.name, true)"
+            v-on:pointerover="onWoodClick(wood.name, false)"
+            v-on:pointerout="image = imageClicked"
           ></b-img></b-link>
         </p>
         <h4 v-if="ceramics.length > 0">Wzory ceramik:</h4>
@@ -61,6 +66,7 @@ export default {
       name: "",
       description: "",
       image: "",
+      imageClicked: "",
       images: null,
       woods: null,
       metals: null,
@@ -123,19 +129,21 @@ export default {
       this.image = this.$props.myJson.content.products[id].images.all[0].source;
       this.images = this.$props.myJson.content.products[id].images.all;
     },
-    onWoodClick(attribute) {
+    onWoodClick(attribute,click) {
       var images = this.$props.myJson.content.products[this.id].images.all;
       for (var i in images) {
         if (images[i].wood === attribute) {
           this.image = images[i].source;
+          if(click) this.imageClicked = images[i].source;
         }
       }
     },
-    onMetalClick(attribute) {
+    onMetalClick(attribute,click) {
       var images = this.$props.myJson.content.products[this.id].images.all;
       for (var i in images) {
         if (images[i].metal === attribute) {
           this.image = images[i].source;
+          if(click) this.imageClicked = images[i].source;
         }
       }
     }
@@ -176,10 +184,22 @@ img {
 img:hover {
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
+.img-material {
+  border-bottom: 2px transparent solid;
+  transition: border 0.2s;
+}
+.img-material:hover {
+  border-bottom: 2px black solid;
+}
 #small-image {
   width: 75px;
   height: 75px;
   object-fit: cover;
+  border-bottom: 3px transparent solid;
+  transition: border 0.2s;
+}
+#small-image:hover {
+  border-bottom: 3px black solid;
 }
 #small-images-container {
   text-align: center;
