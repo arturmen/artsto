@@ -19,65 +19,65 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_9.jpg",
-                            "wood": "Zielony",
-                            "metal": "Złoty"
+                            "wood": "green",
+                            "metal": "gold"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_2.jpg",
-                            "wood": "Żółty",
-                            "metal": "Czarny"
+                            "wood": "yellow",
+                            "metal": "black"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_3.jpg",
-                            "wood": "Orange",
-                            "metal": "Czarny"
+                            "wood": "orange",
+                            "metal": "black"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_4.jpg",
-                            "wood": "Naturalny",
-                            "metal": "Czarny"
+                            "wood": "natural",
+                            "metal": "black"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_5.jpg",
-                            "wood": "Naturalny",
+                            "wood": "natural",
                             "gallery": false,
-                            "metal": "Czarny"
+                            "metal": "black"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_8.jpg",
-                            "wood": "Orange",
-                            "metal": "Czarny"
+                            "wood": "orange",
+                            "metal": "black"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_1.jpg",
-                            "wood": "Zielony",
+                            "wood": "green",
                             "gallery": false,
-                            "metal": "Złoty"
+                            "metal": "gold"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_10.jpg",
-                            "wood": "Zielony",
-                            "metal": "Złoty"
+                            "wood": "green",
+                            "metal": "gold"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_porcellana_11.jpg",
-                            "wood": "Zielony",
-                            "metal": "Złoty"
+                            "wood": "green",
+                            "metal": "gold"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy",
-                        "Żółty"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown",
+                        "yellow"
                     ],
                     "metal": [
-                        "Czarny",
-                        "Złoty"
+                        "black",
+                        "gold"
                     ],
                     "ceramics": [
                         "A1",
@@ -100,30 +100,30 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_tempo_vetro_2.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_vetro_3.jpg",
-                            "wood": "Zielony",
+                            "wood": "green",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_tempo_vetro_4.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Czarny",
-                        "Złoty"
+                        "black",
+                        "gold"
                     ],
                     "ceramics": [
                     ]
@@ -141,84 +141,84 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_2.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_3.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_4.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_5.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_6.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_7.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_8.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_9.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_10.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_11.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_komplet_12.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_1.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_2.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_3.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_4.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_5.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_6.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Srebrny"
+                        "silver"
                     ],
                     "ceramics": [
                         "A1",
@@ -249,20 +249,20 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_7.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Srebrny"
+                        "silver"
                     ],
                     "ceramics": [
                         "A1",
@@ -293,20 +293,20 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_porcellana_7.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Srebrny"
+                        "silver"
                     ],
                     "ceramics": [
                         "A1",
@@ -337,20 +337,20 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_2.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Srebrny"
+                        "silver"
                     ],
                     "ceramics": []
                 }
@@ -367,20 +367,20 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_alto_vetro_1.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Srebrny"
+                        "silver"
                     ],
                     "ceramics": []
                 }
@@ -397,20 +397,20 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_beczulka_1.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Srebrny"
+                        "silver"
                     ],
                     "ceramics": []
                 }
@@ -427,43 +427,43 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_coperto_1.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_2.jpg",
-                            "wood": "Brązowy",
+                            "wood": "brown",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_3.jpg",
-                            "wood": "Brązowy",
+                            "wood": "brown",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_4.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_5.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_coperto_6.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Czarny",
-                        "Złoty"
+                        "black",
+                        "gold"
                     ],
                     "ceramics": [
                         "A1",
@@ -494,38 +494,38 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_babuni_2.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_3.jpg",
-                            "wood": "Brązowy",
+                            "wood": "brown",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_4.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_5.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         },
                         {
                             "source": "assets/images/products/mlynek_babuni_6.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Czarny",
-                        "Złoty"
+                        "black",
+                        "gold"
                     ],
                     "ceramics": []
                 }
@@ -542,43 +542,43 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_cubo_1.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_2.jpg",
-                            "wood": "Zielony"
+                            "wood": "green"
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_3.jpg",
-                            "wood": "Zielony",
+                            "wood": "green",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_4.jpg",
-                            "wood": "Brązowy",
+                            "wood": "brown",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_5.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_cubo_6.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Czarny",
-                        "Złoty"
+                        "black",
+                        "gold"
                     ],
                     "ceramics": []
                 }
@@ -595,32 +595,32 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_muro_1.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         },
                         {
                             "source": "assets/images/products/mlynek_muro_2.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_muro_4.jpg",
-                            "wood": "Orange"
+                            "wood": "orange"
                         },
                         {
                             "source": "assets/images/products/mlynek_muro_5.jpg",
-                            "wood": "Naturalny"
+                            "wood": "natural"
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Żeliwo"
+                        "metal"
                     ],
                     "ceramics": [
                         "A1",
@@ -651,34 +651,34 @@
                     "all": [
                         {
                             "source": "assets/images/products/mlynek_retro_1.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_retro_2.jpg",
-                            "wood": "Brązowy"
+                            "wood": "brown"
                         },
                         {
                             "source": "assets/images/products/mlynek_retro_3.jpg",
-                            "wood": "Brązowy",
+                            "wood": "brown",
                             "gallery": false
                         },
                         {
                             "source": "assets/images/products/mlynek_retro_4.jpg",
-                            "wood": "Brązowy",
+                            "wood": "brown",
                             "gallery": false
                         }
                     ]
                 },
                 "materials": {
                     "wood": [
-                        "Bordowy",
-                        "Zielony",
-                        "Naturalny",
-                        "Orange",
-                        "Brązowy"
+                        "bordo",
+                        "green",
+                        "natural",
+                        "orange",
+                        "brown"
                     ],
                     "metal": [
-                        "Żeliwo"
+                        "metal"
                     ],
                     "ceramics": []
                 }
@@ -686,46 +686,46 @@
         ],
         "materials": {
             "wood": {
-                "Naturalny": {
-                    "name": "Naturalny",
+                "natural": {
+                    "name": "natural",
                     "thumbnail": "assets/images/materials/wood/natural.png"
                 },
-                "Orange": {
-                    "name": "Orange",
+                "orange": {
+                    "name": "orange",
                     "thumbnail": "assets/images/materials/wood/orange.png"
                 },
-                "Brązowy": {
-                    "name": "Brązowy",
+                "brown": {
+                    "name": "brown",
                     "thumbnail": "assets/images/materials/wood/brown.png"
                 },
-                "Bordowy": {
-                    "name": "Bordowy",
+                "bordo": {
+                    "name": "bordo",
                     "thumbnail": "assets/images/materials/wood/red.png"
                 },
-                "Zielony": {
-                    "name": "Zielony",
+                "green": {
+                    "name": "green",
                     "thumbnail": "assets/images/materials/wood/green.png"
                 },
                 "Źółty": {
-                    "name": "Żółty",
+                    "name": "yellow",
                     "thumbnail": "assets/images/materials/wood/yellow.jpg"
                 }
             },
             "metal": {
-                "Czarny": {
-                    "name": "Czarny",
+                "black": {
+                    "name": "black",
                     "thumbnail": "assets/images/materials/metal/steel_black.png"
                 },
-                "Srebrny": {
-                    "name": "Srebrny",
+                "silver": {
+                    "name": "silver",
                     "thumbnail": "assets/images/materials/metal/steel_silver.png"
                 },
-                "Złoty": {
-                    "name": "Złoty",
+                "gold": {
+                    "name": "gold",
                     "thumbnail": "assets/images/materials/metal/steel_gold.png"
                 },
                 "Źeliwo": {
-                    "name": "Żeliwo",
+                    "name": "metal",
                     "thumbnail": "assets/images/materials/metal/iron_black.png"
                 }
             },

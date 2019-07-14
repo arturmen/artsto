@@ -1,5 +1,5 @@
 <template>
-    <div id="header-container" class="shadow">
+    <div id="header-container" class="shadow-sm" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 1;">
         <header>  
             <div class="pt-1 pl-4">
                 <a
@@ -20,7 +20,7 @@
         text-decoration: none;
     }
     header {
-        background-color: #d8b058;
+        background-color: #f5f5f5;
         height: 4.75rem;
     }
     a{

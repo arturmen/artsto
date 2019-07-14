@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vue-headful title="Produkt"/>
+    <vue-headful :title=title />
     <div id="product-container" class="row">
       <div class="col-1 pt-5" style="margin-left: 6rem;">
         <div id="small-images-container">
@@ -70,7 +70,8 @@ export default {
       images: null,
       woods: null,
       metals: null,
-      ceramics: null
+      ceramics: null,
+      title: "Artsto",
     };
   },
   methods: {
@@ -123,11 +124,17 @@ export default {
     },
     setAttributes(id) {
       this.name = this.$props.myJson.content.products[id].name;
-      this.description = this.$props.myJson.content.products[
-        id
-      ].description_long;
-      this.image = this.$props.myJson.content.products[id].images.all[0].source;
+      this.title = "Artsto | "+ this.$props.myJson.content.products[id].name
+      this.description = this.$props.myJson.content.products[id].description_long;
+      this.setImage()
       this.images = this.$props.myJson.content.products[id].images.all;
+    },
+    setImage() {
+      if(this.$route.params.colour) 
+        for(var img in this.$props.myJson.content.products[this.id].images.all)
+          if(img.wood === this.$route.params.colour) this.image = this.$props.myJson.content.products[this.id].images.all[img].source
+      if(this.image === "") this.image = this.$props.myJson.content.products[this.id].images.all[0].source
+      this.imageClicked = this.image
     },
     onWoodClick(attribute,click) {
       var images = this.$props.myJson.content.products[this.id].images.all;

@@ -1,5 +1,6 @@
 <template>
 <div>
+    <vue-headful title="Artsto | Produkty"/>
     <div v-bind:key=k> 
         <product-short
             v-for="i in items"
@@ -34,7 +35,6 @@ export default {
                     while(this.items[j].images.all.length > 5){
                         this.items[j].images.all.pop()
                     }
-                console.log(this.items[j].images.all)
             }
             this.k=this.k+1
         }

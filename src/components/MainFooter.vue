@@ -1,9 +1,9 @@
 <template>
     <footer class="footer">
         <p id="p-footer" class="pl-4 pt-4 text-center"  >@ 2019 Artsto. Sp.z.o.o
-        <a class="pl-5"  href=#>O nas</a>
+        <a class="pl-5"  href=#section-about>O nas</a>
         <a class="pl-5"  href=#>Pomoc</a>
-        <a class="pl-5"  href=#>Kontakt</a>
+        <a class="pl-5"  href=#section-contact >Kontakt</a>
         </p>
     </footer>
 </template>
