@@ -27,7 +27,7 @@
             Od 20 lat zajmujemy się produkcją artykułów stolarskich. Współpracujemy z wieloma firmami, między innymi firmami produkującymi ceramikę z Bolesławca
         </p>
     </div>
-    <photo-grid id="section-photos" style="margin-top: 8rem;"/>
+    <photo-grid style="margin-top: 8rem;" :myJson=myJson id="section-photos" />
     <contact id="section-contact" style="margin-top: 8rem;" />
 </div>
 </template>
@@ -37,6 +37,7 @@ import Contact from './Contact.vue'
 import PhotoGrid from './PhotoGrid.vue'
 
 export default {
+    props: ["myJson"],
     components: {
         Contact,
         PhotoGrid
