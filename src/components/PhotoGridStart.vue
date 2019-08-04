@@ -1,15 +1,12 @@
 <template>
     <div >
         <div v-masonry transition-duration="0.3s" item-selector=".item">
-            <b-img v-masonry-tile class="item grid-item img-3" :src="require('../' + items[0].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[1].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-4" :src="require('../' + items[2].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[3].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-3" :src="require('../' + items[4].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[5].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[6].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[7].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[8].source)"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-5" :src="require('../assets/images/products/mlynek_alto_porcellana_3.jpg')"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-5" :src="require('../assets/images/products/mlynek_babuni_1.jpg')"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-5" :src="require('../assets/images/products/mlynek_muro_2.jpg')"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-5" :src="require('../assets/images/products/mlynek_retro_2.jpg')"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-5" :src="require('../assets/images/products/mlynek_tempo_porcellana_9.jpg')"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-5" :src="require('../assets/images/products/mlynek_beczulka_1.jpg')"></b-img>
         </div>  
     </div>
 </template>
@@ -32,38 +29,21 @@ export default {
 
 <style scoped>
 @media only screen and (max-width: 614px) {
-    .img-2 {
-        height: 12.5vh!important;
-    }
-    .img-3 {
-        height: 25vh!important;
-    }
-    .img-4 {
-        height: 12.5vh!important;
+    .img-5 {
+        width: 50%!important
     }
 }
 @media only screen and (min-width: 615px) {
-    .img-2 {
-        height: 25vh!important;
-    }
-    .img-3 {
-        height: 50vh!important;
-    }
-    .img-4 {
-        height: 25vh!important;
+    .img-5 {
+        width: 33.333%!important
     }
 }
 @media only screen and (min-width: 901px) {
-    .img-2 {
-        height: 37.5vh!important;
-    }
-    .img-3 {
-        height: 75vh!important;
-    }
-    .img-4 {
-        height: 37.5vh!important;
+    .img-5 {
+        width: 16.666%!important
     }
 }
+
 
 * { box-sizing: border-box; }
 
@@ -139,6 +119,10 @@ img:hover {
 .img-3 {
     height: 75vh;
     width: 25%; 
+}
+.img-5 {
+    height: 30vh;
+    width: 16.6%;
 }
 
 

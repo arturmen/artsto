@@ -1,17 +1,31 @@
 <template>
-    <div id="header-container" class="shadow-sm" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 1;">
-        <header>  
+    <div id="header-container" class="shadow-sm header" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 1;">
+        <header>
             <div class="pt-1 pl-4">
                 <a
                 id="logo"
                 href="/#/"><img src="../assets/images/logo/logo-artsto-dark.png"/></a>
-                <a class="pt-4 pr-5 float-right" href="/#/gallery">GALERIA</a>
-                <a class="pt-4 pr-5 float-right" href="/#/products">PRODUKTY</a>
-                <a class="pt-4 pr-5 float-right" href="/#/">STRONA GŁÓWNA</a>
+                <a class="pt-4 pr-5 float-right menu-big" href="/#/gallery">GALERIA</a>
+                <a class="pt-4 pr-5 float-right menu-big" href="/#/products">PRODUKTY</a>
+                <a class="pt-4 pr-5 float-right menu-big" href="/#/">STRONA GŁÓWNA</a>
+                <div class="menu-small" style="margin: 0 auto; position: relative; left: 25%; max-width: fit-content">
+                <b-dropdown size="lg" right variant="link" toggle-class=" text-center text-decoration-none" no-caret>
+                    <template slot="button-content"> <font-awesome-icon class="pt-3 menu-small dropdown b-dropdown" style=" margin: 0 auto; font-size: 24px; -webkit-box-sizing: content-box!important; box-sizing: content-box!important" icon="bars" /></template>
+                    <b-dropdown-item href="/#/">STRONA GŁÓWNA</b-dropdown-item>
+                    <b-dropdown-item href="/#/gallery">GALERIA</b-dropdown-item>
+                    <b-dropdown-item href="/#/products">PRODUKTY</b-dropdown-item>
+                </b-dropdown>
+                </div>
             </div>
         </header>
     </div>
 </template>
+<style>
+.header .btn-link {
+    color: black!important;
+}
+</style>
+
 
 <style scoped>
     #logo {
@@ -38,5 +52,18 @@
     #header-container {
         border-bottom: solid 1px;
         border-bottom-color: rgba(228, 228, 228, 1);;
+    }
+    @media only screen and (max-width: 614px) {
+        .menu-big {
+            display: none;
+        }
+        .menu-small {
+            display: block;
+        }
+    }
+    @media only screen and (min-width: 615px) {
+        .menu-small {
+            display: none;
+        }
     }
 </style>
