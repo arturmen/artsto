@@ -32,9 +32,9 @@ export default {
         init() {
             for(var j in this.$props.myJson.content.products){
                     this.items[j] = this.$props.myJson.content.products[j]
-                    while(this.items[j].images.all.length > 5){
-                        this.items[j].images.all.pop()
-                    }
+                    // while(this.items[j].images.all.length > 5){
+                    //     this.items[j].images.all.pop()
+                    // }
             }
             this.k=this.k+1
         }

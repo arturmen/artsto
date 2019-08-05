@@ -6,24 +6,23 @@
                     {{items.name}}
                 </b-link>
             </h4>
-            <masonry
-                :cols="{default: 5, 1000: 4, 700: 3, 500: 2, 400: 1}"
-                :gutter="{default: '30px', 700: '15px'}"
-                >
-                <div v-for="(item, index) in items.images.all" :key="index">
-                    <div class="px-1 py-1"><b-img :src="require('../' + item.source)"></b-img></div>
-                </div>
-            </masonry>
-            <p style="margin-top: 20px;">
-               {{items.description_long}}
-            </p>
+            <div>
+                <photo-grid-products :json="items" />
+                <p style="margin-top: 20px;">
+                {{items.description_long}}
+                </p>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import PhotoGridProducts from './PhotoGridProducts.vue'
 export default {
-    props: ["items"]
+    props: ["items"],
+    components: {
+        PhotoGridProducts
+    },
 }
 </script>
 

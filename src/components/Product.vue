@@ -25,7 +25,7 @@
         </b-modal>
         <br>
       </div>
-      <div class="col-5 py-5 px-5">
+      <div class=" descrip col-5 py-5 px-5">
         <h4 id="title">{{name}}</h4>
         <p class="my-3">{{ description }}</p>
         <h4>Kolory drewna:</h4>
@@ -162,6 +162,12 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 1125px) {
+  .descrip {
+    margin: 0 auto;
+    display: block;
+  }
+}
 #modal-img-big .modal-body {
     padding: 0rem!important;
 }
@@ -192,11 +198,11 @@ img:hover {
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .img-material {
-  border-bottom: 2px transparent solid;
-  transition: border 0.2s;
+  /* border-bottom: 2px transparent solid;
+  transition: border 0.2s; */
 }
 .img-material:hover {
-  border-bottom: 2px black solid;
+  /* border-bottom: 2px black solid; */
 }
 #small-image {
   width: 75px;

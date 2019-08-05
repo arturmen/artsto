@@ -1,24 +1,23 @@
 <template>
     <div >
-        <div v-masonry transition-duration="0.3s" item-selector=".item">
+        <div v-if="items.length > 5" v-masonry transition-duration="0.3s" item-selector=".item">
             <b-img v-masonry-tile class="item grid-item img-3" :src="require('../' + items[0].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[1].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-4" :src="require('../' + items[2].source)"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-4" :src="require('../' + items[1].source)"></b-img>
+            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[2].source)"></b-img>
             <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[3].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-3" :src="require('../' + items[4].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[5].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[6].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[7].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[8].source)"></b-img>
-        </div>  
+            <b-img v-masonry-tile class="item grid-item img-4" :src="require('../' + items[4].source)"></b-img>
+        </div>
+        <div v-else v-masonry transition-duration="0.3s" item-selector=".item">
+            <b-img v-masonry-tile class="item grid-item img-solo" :src="require('../' + items[0].source)"></b-img>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    props: ["myJson"],
+    props: ["json"],
     mounted() {
-        this.items = this.myJson.content.products[0].images.all
+        this.items = this.json.images.all
         this.$redrawVueMasonry()
 
     },
@@ -33,16 +32,33 @@ export default {
 <style scoped>
 @media only screen and (max-width: 614px) {
     .img-2 {
-        height: 12.5vh!important;
+        height: 8.5vh!important;
     }
     .img-3 {
-        height: 25vh!important;
+        height: 17vh!important;
     }
     .img-4 {
-        height: 12.5vh!important;
+        height: 8.5vh!important;
+    }
+    .img-solo {
+        height: 17vh!important;
     }
 }
 @media only screen and (min-width: 615px) {
+    .img-2 {
+        height: 17vh!important;
+    }
+    .img-3 {
+        height: 34vh!important;
+    }
+    .img-4 {
+        height: 17vh!important;
+    }
+    .img-solo {
+       height: 34vh!important;
+    }
+}
+@media only screen and (min-width: 901px) {
     .img-2 {
         height: 25vh!important;
     }
@@ -52,16 +68,8 @@ export default {
     .img-4 {
         height: 25vh!important;
     }
-}
-@media only screen and (min-width: 901px) {
-    .img-2 {
-        height: 37.5vh!important;
-    }
-    .img-3 {
-        height: 75vh!important;
-    }
-    .img-4 {
-        height: 37.5vh!important;
+    .img-solo {
+        height: 50vh!important;
     }
 }
 
@@ -129,18 +137,21 @@ img:hover {
     width: 50%; 
 }
 .img-4 {
-    height: 37.5vh;
+    height: 25vh;
     width: 50%; 
 }
 .img-2 {
-    height: 37.5vh;
+    height: 25vh;
     width: 25%; 
 }
 .img-3 {
-    height: 75vh;
+    height: 50vh;
     width: 25%; 
 }
 
-
+.img-solo {
+    height: 50vh;
+    max-width: 50%; 
+}
 
 </style>
