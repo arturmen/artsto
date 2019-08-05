@@ -1,5 +1,5 @@
 <template>
-    <div id="header-container" class="shadow-sm header" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 1;">
+    <div id="header-container" class="shadow-sm header" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 10;">
         <header>
             <div class="pt-1 pl-4">
                 <a
@@ -36,6 +36,7 @@
     header {
         background-color: #f5f5f5;
         height: 4.75rem;
+        
     }
     a{
         color: #444444;
