@@ -14,7 +14,7 @@ let router = new Router({
       component: Home
     },
     {
-      path: '/product/:name',
+      path: '/product/:name/:colour',
       name: 'product',
       component: Product,
     },
@@ -22,6 +22,10 @@ let router = new Router({
       path: '/products',
       name: 'products',
       component: Products
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
   ]
 })

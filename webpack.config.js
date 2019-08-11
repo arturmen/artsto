@@ -10,6 +10,9 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    disableHostCheck: true
+  },
   plugins: [
     // make sure to include the plugin!
     new VueLoaderPlugin()

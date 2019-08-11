@@ -1,5 +1,6 @@
 <template>
 <div>
+    <vue-headful title="Artsto | Produkty"/>
     <div v-bind:key=k> 
         <product-short
             v-for="i in items"
@@ -31,10 +32,9 @@ export default {
         init() {
             for(var j in this.$props.myJson.content.products){
                     this.items[j] = this.$props.myJson.content.products[j]
-                    while(this.items[j].images.all.length > 5){
-                        this.items[j].images.all.pop()
-                    }
-                console.log(this.items[j].images.all)
+                    // while(this.items[j].images.all.length > 5){
+                    //     this.items[j].images.all.pop()
+                    // }
             }
             this.k=this.k+1
         }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vue-headful title="Produkt"/>
+    <vue-headful :title=title />
     <div id="product-container" class="row">
       <div class="col-1 pt-5" style="margin-left: 6rem;">
         <div id="small-images-container">
@@ -25,7 +25,7 @@
         </b-modal>
         <br>
       </div>
-      <div class="col-5 py-5 px-5">
+      <div class=" descrip col-5 py-5 px-5">
         <h4 id="title">{{name}}</h4>
         <p class="my-3">{{ description }}</p>
         <h4>Kolory drewna:</h4>
@@ -70,7 +70,8 @@ export default {
       images: null,
       woods: null,
       metals: null,
-      ceramics: null
+      ceramics: null,
+      title: "Artsto",
     };
   },
   methods: {
@@ -123,11 +124,17 @@ export default {
     },
     setAttributes(id) {
       this.name = this.$props.myJson.content.products[id].name;
-      this.description = this.$props.myJson.content.products[
-        id
-      ].description_long;
-      this.image = this.$props.myJson.content.products[id].images.all[0].source;
+      this.title = "Artsto | "+ this.$props.myJson.content.products[id].name
+      this.description = this.$props.myJson.content.products[id].description_long;
+      this.setImage()
       this.images = this.$props.myJson.content.products[id].images.all;
+    },
+    setImage() {
+      if(this.$route.params.colour) 
+        for(var img in this.$props.myJson.content.products[this.id].images.all)
+          if(img.wood === this.$route.params.colour) this.image = this.$props.myJson.content.products[this.id].images.all[img].source
+      if(this.image === "") this.image = this.$props.myJson.content.products[this.id].images.all[0].source
+      this.imageClicked = this.image
     },
     onWoodClick(attribute,click) {
       var images = this.$props.myJson.content.products[this.id].images.all;
@@ -155,6 +162,12 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 1125px) {
+  .descrip {
+    margin: 0 auto;
+    display: block;
+  }
+}
 #modal-img-big .modal-body {
     padding: 0rem!important;
 }
@@ -185,11 +198,11 @@ img:hover {
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .img-material {
-  border-bottom: 2px transparent solid;
-  transition: border 0.2s;
+  /* border-bottom: 2px transparent solid;
+  transition: border 0.2s; */
 }
 .img-material:hover {
-  border-bottom: 2px black solid;
+  /* border-bottom: 2px black solid; */
 }
 #small-image {
   width: 75px;
