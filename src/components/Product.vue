@@ -212,11 +212,8 @@ img:hover {
   width: 75px;
   height: 75px;
   object-fit: cover;
-  border-bottom: 3px transparent solid;
-  transition: border 0.2s;
 }
 #small-image:hover {
-  border-bottom: 3px black solid;
 }
 #small-images-container {
   text-align: center;

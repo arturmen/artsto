@@ -7,10 +7,10 @@
                 href="/#/"><img src="../assets/images/logo/logo-artsto-dark.png"/></a>
                 <a class="pt-4 pr-5 float-right menu-big" href="/gallery.html">GALERIA</a>
                 <div class="link-dropdown">
-                    <b-dropdown id="dropdown-1" right text="PRODUKTY" style="max-height: 100px; overflow: scroll;" class="pr-5 float-right menu-big" >
+                    <b-dropdown id="dropdown-1" right text="PRODUKTY" class="pr-5 float-right menu-big" >
                         <b-dropdown-item href="/#/products">Wszystkie produkty</b-dropdown-item>
                         <b-dropdown-divider></b-dropdown-divider>
-                        <b-dropdown-item v-for="product in myJson.content.products" :key="product.short_name">{{product.name_short}}</b-dropdown-item>
+                        <b-dropdown-item v-for="product in myJson.content.products" :key="product.short_name" :href="'/#/product/' + product.name_url +'/' + product.images.all[0].wood">{{product.name_short}}</b-dropdown-item>
                     </b-dropdown>
                 </div>
                 <a class="pt-4 pr-5 float-right menu-big" href="/#/">STRONA GŁÓWNA</a>

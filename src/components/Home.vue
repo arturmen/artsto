@@ -13,11 +13,11 @@
     </div>
     <photo-grid-start style="margin-top: 5rem; margin-bottom: 7rem;" :myJson=myJson id="section-photos" />
     <div  id="section-about">
-        <h2 style="max-width: 700px; font-size: 40px;">    
-            Produkujemy młynki do kawy, pieprzu oraz kasetki drewniane
+        <h2 style="max-width: 700px; font-size: 24px;">    
+            Nasza firma zajmuje się produkcją młynków ręcznych do kawy, pieprzu i przypraw, kasetek na herbatę oraz różnego rodzaju kasetek i pudełek na upominki.	Nasze produkty trafiają do klientów na terenie całej Polski już od 1995 roku. 
         </h2>
         <p>
-            Od 20 lat zajmujemy się produkcją artykułów stolarskich. Współpracujemy z wieloma firmami, między innymi firmami produkującymi ceramikę z Bolesławca
+            Wszystkie oferowane przez nas produkty są robione ręcznie, dzięki czemu jakość naszych wyrobów jest wysoka, a czas eksploatacji bardzo długi.
         </p>
     </div>
     <photo-grid style="margin-top: 8rem;" :myJson=myJson id="section-photos" />
