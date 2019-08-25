@@ -11,13 +11,6 @@
             Młynki, Kasetki
         </h2>
     </div>
-    <!-- <div class="container-images">
-        <b-link href="/#/product/komplet/brown"><b-img :src="require('../assets/images/products/mlynek_alto_porcellana_3.jpg')"></b-img></b-link>
-        <b-link href="/#/product/babuni/natural"><b-img :src="require('../assets/images/products/mlynek_babuni_1.jpg')"></b-img></b-link>
-        <b-link href="/#/product/scienny/brown"><b-img :src="require('../assets/images/products/mlynek_muro_2.jpg')"></b-img></b-link>
-        <b-link href="/#/product/retro/brown"><b-img :src="require('../assets/images/products/mlynek_retro_2.jpg')"></b-img></b-link>
-        <b-link href="/#/product/klepsydra/green"><b-img :src="require('../assets/images/products/mlynek_tempo_porcellana_9.jpg')"></b-img></b-link>
-    </div> -->
     <photo-grid-start style="margin-top: 5rem; margin-bottom: 7rem;" :myJson=myJson id="section-photos" />
     <div  id="section-about">
         <h2 style="max-width: 700px; font-size: 40px;">    

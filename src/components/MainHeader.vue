@@ -6,7 +6,13 @@
                 id="logo"
                 href="/#/"><img src="../assets/images/logo/logo-artsto-dark.png"/></a>
                 <a class="pt-4 pr-5 float-right menu-big" href="/gallery.html">GALERIA</a>
-                <a class="pt-4 pr-5 float-right menu-big" href="/#/products">PRODUKTY</a>
+                <div class="link-dropdown">
+                    <b-dropdown id="dropdown-1" right text="PRODUKTY" style="max-height: 100px; overflow: scroll;" class="pr-5 float-right menu-big" >
+                        <b-dropdown-item href="/#/products">Wszystkie produkty</b-dropdown-item>
+                        <b-dropdown-divider></b-dropdown-divider>
+                        <b-dropdown-item v-for="product in myJson.content.products" :key="product.short_name">{{product.name_short}}</b-dropdown-item>
+                    </b-dropdown>
+                </div>
                 <a class="pt-4 pr-5 float-right menu-big" href="/#/">STRONA GŁÓWNA</a>
                 <div class="menu-small" style="margin: 0 auto; position: relative; left: 25%; max-width: fit-content">
                 <b-dropdown size="lg" right variant="link" toggle-class=" text-center text-decoration-none" no-caret>
@@ -20,9 +26,27 @@
         </header>
     </div>
 </template>
+
+<script>
+export default {
+    props: ["myJson"]
+}
+</script>
 <style>
 .header .btn-link {
     color: black!important;
+}
+
+.link-dropdown .btn-group > .btn {
+    color: #444444;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    font-weight: 400;
+    letter-spacing: 3px;
+    background-color: inherit;
+    border: none;
+    margin-top:1.15rem;
 }
 </style>
 

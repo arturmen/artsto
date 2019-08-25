@@ -20,7 +20,7 @@
         <b-link v-b-modal.modal-img-big>
             <b-img id="main-img" :title=name class="shadow-lg" :src="require('../' + image)"></b-img>
         </b-link>
-        <b-modal id="modal-img-big" hide-header=true hide-footer=true>
+        <b-modal id="modal-img-big" :hide-header="true" :hide-footer="true">
             <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image)"></b-img>
         </b-modal>
         <br>
@@ -131,8 +131,12 @@ export default {
     },
     setImage() {
       if(this.$route.params.colour) 
-        for(var img in this.$props.myJson.content.products[this.id].images.all)
-          if(img.wood === this.$route.params.colour) this.image = this.$props.myJson.content.products[this.id].images.all[img].source
+        for(var img in this.$props.myJson.content.products[this.id].images.all){
+          if(this.$props.myJson.content.products[this.id].images.all[img].wood === this.$route.params.colour){
+            
+            this.image = this.$props.myJson.content.products[this.id].images.all[img].source
+          }
+        }
       if(this.image === "") this.image = this.$props.myJson.content.products[this.id].images.all[0].source
       this.imageClicked = this.image
     },

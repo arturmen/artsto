@@ -2,34 +2,34 @@
     <div >
         <div v-masonry transition-duration="0.3s" item-selector=".item">
             <div v-masonry-tile class="item grid-item img-5 img-container" style="position:absolute">
-                    <b-link href="/#/product/komplet/brown" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_alto_porcellana_3.jpg')"></b-img></b-link>
+                    <b-link href="/#/product/komplet/brązowy" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_alto_porcellana_3.jpg')"></b-img></b-link>
                     <div class="centered"><div class="desc desc-long" >Komplet Pieprz Sól</div>
                     <div class="desc desc-short" >Brązowy</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-5 img-container" style="position:absolute">
-                <b-link href="/#/product/babuni/natural" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_babuni_1.jpg')"></b-img></b-link>
+                <b-link href="/#/product/babuni/naturalny" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_babuni_1.jpg')"></b-img></b-link>
                     <div class="centered"><div class="desc desc-long" >Młynek Babuni</div>
                     <div class="desc desc-short" >Naturalny</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-5 img-container" style="position:absolute">
-                <b-link href="/#/product/scienny/brown"  ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_muro_2.jpg')"></b-img></b-link>
+                <b-link href="/#/product/scienny/orange"  ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_muro_2.jpg')"></b-img></b-link>
                     <div class="centered"><div class="desc desc-long" >Młynek Ścienny</div>
                     <div class="desc desc-short" >Brązowy</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-5 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_retro_2.jpg')"></b-img></b-link>
+                <b-link href="/#/product/retro/brązowy" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_retro_2.jpg')"></b-img></b-link>
                     <div class="centered"><div class="desc desc-long" >Młynek Retro</div>
                     <div class="desc desc-short" >Brązowy</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-5 img-container" style="position:absolute">
-                <b-link href="/#/product/klepsydra/green" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_tempo_porcellana_9.jpg')"></b-img></b-link>
+                <b-link href="/#/product/klepsydra/zielony" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_tempo_porcellana_9.jpg')"></b-img></b-link>
                     <div class="centered"><div class="desc desc-long" >Młynek Klepsydra</div>
                     <div class="desc desc-short" >Zielony</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-5 img-container" style="position:absolute">
-                <b-link href="/#/product/beczulka/natural" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_beczulka_1.jpg')"></b-img></b-link>
+                <b-link href="/#/product/beczulka/naturalny" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_beczulka_1.jpg')"></b-img></b-link>
                     <div class="centered"><div class="desc desc-long" >Młynek Beczułka</div>
-                    <div class="desc desc-short" >Brązowy</div></div>
+                    <div class="desc desc-short" >Naturalny</div></div>
             </div>
         </div>  
     </div>
@@ -103,7 +103,7 @@ img {
     position:relative;
 }
 img:hover {
-    opacity: 0.2;
+    opacity: 0.4;
     
 } 
 

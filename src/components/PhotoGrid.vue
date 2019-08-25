@@ -2,60 +2,51 @@
     <div >
         <div v-masonry transition-duration="0.3s" item-selector=".item">
             <div v-masonry-tile class="item grid-item img-3 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-3-h" :src="require('../' + items[0].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[0].wood" ><b-img class="img-3-h" :src="require('../' + items[0].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[0].wood}}</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-2 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-2-h" :src="require('../' + items[1].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[1].wood" ><b-img class="img-2-h" :src="require('../' + items[1].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[1].wood}}</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-4 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-4-h" :src="require('../' + items[2].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[2].wood" ><b-img class="img-4-h" :src="require('../' + items[2].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[2].wood}}</div></div>
             </div>
                         <div v-masonry-tile class="item grid-item img-2 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-2-h" :src="require('../' + items[3].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[3].wood" ><b-img class="img-2-h" :src="require('../' + items[3].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[3].wood}}</div></div>
             </div>
                         <div v-masonry-tile class="item grid-item img-3 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-3-h" :src="require('../' + items[4].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[4].wood" ><b-img class="img-3-h" :src="require('../' + items[4].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[4].wood}}</div></div>
             </div>
                         <div v-masonry-tile class="item grid-item img-2 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-2-h" :src="require('../' + items[5].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[5].wood" ><b-img class="img-2-h" :src="require('../' + items[5].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[5].wood}}</div></div>
             </div>
 
                         <div v-masonry-tile class="item grid-item img-2 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-2-h" :src="require('../' + items[6].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[6].wood" ><b-img class="img-2-h" :src="require('../' + items[6].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[6].wood}}</div></div>
             </div>
                         <div v-masonry-tile class="item grid-item img-2 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-2-h" :src="require('../' + items[7].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[7].wood" ><b-img class="img-2-h" :src="require('../' + items[7].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[7].wood}}</div></div>
             </div>
                                     <div v-masonry-tile class="item grid-item img-2 img-container" style="position:absolute">
-                <b-link href="/#/product/retro/brown" ><b-img class="img-2-h" :src="require('../' + items[8].source)"></b-img></b-link>
+                <b-link :href="'/#/product/' + myJson.content.products[0].name_url + '/' + items[8].wood" ><b-img class="img-2-h" :src="require('../' + items[8].source)"></b-img></b-link>
                 <div class="centered"><div class="desc desc-long" >Młynek do kawy</div>
                 <div class="desc desc-short" >{{ items[8].wood}}</div></div>
             </div>
-            <!-- <b-img v-masonry-tile class="item grid-item img-3" :src="require('../' + items[0].source)"></b-img> -->
-            <!-- <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[1].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-4" :src="require('../' + items[2].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[3].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-3" :src="require('../' + items[4].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[5].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[6].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[7].source)"></b-img>
-            <b-img v-masonry-tile class="item grid-item img-2" :src="require('../' + items[8].source)"></b-img> -->
         </div>  
     </div>
 </template>
@@ -190,7 +181,7 @@ img {
     position:relative;
 }
 img:hover {
-    opacity: 0.2;
+    opacity: 0.4;
 }
 .img-container {
     position: absolute!important;

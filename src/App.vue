@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <main-header/>
+    <main-header :myJson="myJson"/>
     <router-view class="content-wrap" :myJson="myJson"></router-view>
     <main-footer/>
   </div>
