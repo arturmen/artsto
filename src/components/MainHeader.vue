@@ -7,8 +7,8 @@
                 href="/#/"><img src="../assets/images/logo/logo-artsto-dark.png"/></a>
                 <a class="pt-4 pr-5 float-right menu-big" href="/gallery.html">GALERIA</a>
                 <div class="link-dropdown">
-                    <b-dropdown id="dropdown-1" right text="PRODUKTY" class="pr-5 float-right menu-big" >
-                        <b-dropdown-item href="/#/products">Wszystkie produkty</b-dropdown-item>
+                    <b-dropdown id="dropdown-1" right text="PRODUKTY" style="columns: 2" class="pr-5 float-right menu-big" >
+                        <b-dropdown-item href="/#/products" class="big-sign-dropdown">Wszystkie produkty</b-dropdown-item>
                         <b-dropdown-divider></b-dropdown-divider>
                         <b-dropdown-item v-for="product in myJson.content.products" :key="product.short_name" :href="'/#/product/' + product.name_url +'/' + product.images.all[0].wood">{{product.name_short}}</b-dropdown-item>
                     </b-dropdown>
@@ -47,6 +47,32 @@ export default {
     background-color: inherit;
     border: none;
     margin-top:1.15rem;
+}
+
+.link-dropdown .dropdown-menu.show {
+    columns: 3!important;
+    width: 75vw;
+    }
+.link-dropdown a {
+    color: #444444;
+    font-size: 16px!important;
+    font-weight: 700!important;
+    letter-spacing: 1px!important;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif!important;
+    transition: margin .4s ease, padding .4s ease;
+}
+.link-dropdown a:hover {
+    color: #999999!important;
+    margin-left: 10px;
+    background-color: transparent;
+}
+.link-dropdown .big-sign-dropdown {
+    font-size: 18px!important; 
+    color: #111111!important; 
+    font-weight: 700!important;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 </style>
 
@@ -91,4 +117,6 @@ export default {
             display: none;
         }
     }
+
+
 </style>
