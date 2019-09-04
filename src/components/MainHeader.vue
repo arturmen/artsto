@@ -74,6 +74,20 @@ export default {
     margin-bottom: 15px;
     margin-top: 15px;
 }
+.menu-small .dropdown-menu.show {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: -5px!important;
+}
+.menu-small a {
+    padding: 15px;
+    color: #444444;
+    font-size: 14px!important;
+    font-weight: 400!important;
+    letter-spacing: 1px!important;
+    font-family: 'Raleway', sans-serif!important;
+}
 </style>
 
 
