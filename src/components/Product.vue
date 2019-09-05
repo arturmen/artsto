@@ -1,8 +1,8 @@
 <template>
   <div>
     <vue-headful :title=title />
-    <div id="product-container" class="row">
-      <div class="col-1 pt-5" style="margin-left: 6rem;">
+    <div id="product-container " class="row">
+      <div class="col-1 pt-5  version-big" style="margin-left: 6rem;">
         <div id="small-images-container">
           <b-link><b-img
             id="small-image"
@@ -16,7 +16,7 @@
           /></b-link>
         </div>
       </div>
-      <div class="col-5 pt-5">
+      <div class="col-5 pt-5 version-big">
         <b-link v-b-modal.modal-img-big>
             <b-img id="main-img" :title=name class="shadow-lg" :src="require('../' + image)"></b-img>
         </b-link>
@@ -25,8 +25,63 @@
         </b-modal>
         <br>
       </div>
-      <div class=" descrip col-5 py-5 px-5">
+      <div class="col-5 py-5 px-5 version-big">
         <h4 id="title">{{name}}</h4>
+        <p class="my-3">{{ description }}</p>
+        <h4>Kolory drewna:</h4>
+        <p class="d-inline mt-3" v-for="wood in woods" v-bind:key="wood.name">
+          <b-link><b-img
+            class="mb-3 mx-1 img-material"
+            :src="require('../' + wood.thumbnail)"
+            v-on:click="onWoodClick(wood.name, true)"
+            v-on:pointerover="onWoodClick(wood.name, false)"
+            v-on:pointerout="image = imageClicked"
+          ></b-img></b-link>
+        </p>
+        <h4>Kolory części metalowych:</h4>
+        <p class="d-inline mt-3" v-for="metal in metals" v-bind:key="metal.name">
+          <b-link><b-img
+            class="mb-3 mx-1 img-material"
+            :src="require('../' + metal.thumbnail)"
+            v-on:click="onMetalClick(metal.name, true)"
+            v-on:pointerover="onWoodClick(wood.name, false)"
+            v-on:pointerout="image = imageClicked"
+          ></b-img></b-link>
+        </p>
+        <h4 v-if="ceramics.length > 0">Wzory ceramik:</h4>
+        <p class="d-inline mt-3" v-for="ceramic in ceramics" v-bind:key="ceramic.name">
+          <b-link><b-img class="mb-3 mx-1" rounded :src="require('../' + ceramic.thumbnail)"></b-img></b-link>
+        </p>
+      </div>
+    </div>
+    <div id="product-container " class="row">
+      <div class="col-12 version-small">
+        <div class="mx-3"><h4 id="title" >{{name}}</h4></div>
+        <div id="small-images-container" class="pt-5">
+          <b-link><b-img
+            class="mx-1 my-1"
+            id="small-image"
+            v-for="img in images"
+            v-bind:key="img.source"
+            v-on:pointerover="image = img.source"
+            v-on:pointerout="image = imageClicked"
+            v-on:click.prevent="image = img.source; imageClicked = img.source"
+            :src="require('../' + img.source)"
+          /></b-link>
+        </div>
+      </div>
+      <div class="col-12 pt-5 version-small">
+        <div  style="width: 100vw; max-height: 50vh; overflow-y: scroll;">
+        <b-link style="" v-b-modal.modal-img-big>
+            <b-img id="main-img" style="width: 100vw;" :title=name class="shadow-lg" :src="require('../' + image)"></b-img>
+        </b-link>
+        </div>
+        <b-modal id="modal-img-big" :hide-header="true" :hide-footer="true">
+            <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image)"></b-img>
+        </b-modal>
+        <br>
+      </div>
+      <div class="col-12 py-5 px-5 version-small">
         <p class="my-3">{{ description }}</p>
         <h4>Kolory drewna:</h4>
         <p class="d-inline mt-3" v-for="wood in woods" v-bind:key="wood.name">
@@ -166,10 +221,20 @@ export default {
 </script>
 
 <style>
-@media only screen and (max-width: 1125px) {
-  .descrip {
-    margin: 0 auto;
-    display: block;
+@media only screen and (max-width: 800px) {
+  .version-small {
+    display: block!important;
+  }
+  .version-big {
+    display: none!important;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .version-small {
+    display: none!important;
+  }
+  .version-big {
+    display: block!important;
   }
 }
 #modal-img-big .modal-body {
