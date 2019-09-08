@@ -100,7 +100,6 @@ export default {
     header {
         background-color: #f5f5f5;
         height: 4.75rem;
-        
     }
     a{
         color: #444444;

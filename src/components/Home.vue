@@ -13,9 +13,9 @@
         </h2>
         </div>
     </div>
-    <div style="background-color: white; height: 200px; margin-top: -10px; position: relative; z-index: 15;">
+    <!-- <div style="background-color: white; height: 200px; margin-top: -10px; position: relative; z-index: 15;">
 
-    </div>
+    </div> -->
     <photo-grid-start style="margin-top: 5rem; margin-bottom: 7rem;" :myJson=myJson id="section-photos" />
     <div  id="section-about">
         <h2 style="max-width: 700px; font-size: 24px;">    
@@ -95,7 +95,8 @@ export default {
         grid-template-columns: 1fr 1fr;
         grid-gap: 0;
         width: 100%;
-        overflow-x: hidden;
+        height: calc(100vh - 4.75rem);
+        overflow: hidden;
         /* z-index: 11;  */
     }
     .main-images img {
@@ -114,13 +115,13 @@ export default {
     }
     .main h2 { 
         position: absolute !important;
-        top: calc(50% - 200px);
+        top: calc(50% - 100px);
         /* z-index: 14; */
         left: calc(50% - 300px);
         font-family: 'Roboto', sans-serif !important;
         color: white;
         font-weight: 600;
-        line-height: 1.5;
+        line-height: 1;
         transition: all 0.35s ease-in
     }
     .main:hover h2 {
