@@ -3,13 +3,18 @@
     <vue-headful
         title="Artsto"
     />
-    <div>
-        <h2 style="max-width: 700px; font-size: 96px; font-weight: 700 !important;">
-            Artsto
+    <div class="main main-images">
+        <b-img :src="require('../assets/images/products/mlynek_alto_porcellana_3.jpg')"></b-img>
+        <b-img :src="require('../assets/images/products/mlynek_tempo_porcellana_10.jpg')"></b-img>
+        <div>
+        <h2 >
+            <div style="max-width: 700px; font-size: 200px; font-weight: 700 !important;">Artsto</div>
+            <!-- <div style="max-width: 700px; font-size: 40px;">Młynki, Kasetki</div> -->
         </h2>
-        <h2 style="max-width: 700px; font-size: 40px;">    
-            Młynki, Kasetki
-        </h2>
+        </div>
+    </div>
+    <div style="background-color: white; height: 200px; margin-top: -10px; position: relative; z-index: 15;">
+
     </div>
     <photo-grid-start style="margin-top: 5rem; margin-bottom: 7rem;" :myJson=myJson id="section-photos" />
     <div  id="section-about">
@@ -63,13 +68,6 @@ export default {
         padding-top:5rem;
         width: 100%;
     }
-
-    
-    img {
-        object-fit: cover;
-        height: 14rem;
-        width: 14rem;
-    } 
     p {
         max-width: 800px;
         position: relative !important;
@@ -87,6 +85,46 @@ export default {
         margin-inline-end: 0px;
         text-align: center !important;
         color: #555;
+    }
+    .main {
+        position: relative;
+    }
+    .main-images {
+        margin-top: -2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+        width: 100%;
+        overflow-x: hidden;
+        /* z-index: 11;  */
+    }
+    .main-images img {
+        object-fit: cover;
+        height: calc(100vh - 4.75rem + 10px);
+        width: calc(100% + 20px);
+        filter: brightness(60%);
+        transition: all .35s ease-in;
+        -webkit-transform: translate3d(-10px,-5px, 0);
+        transform: translate3d(-10px,-5px,0);
+    }
+    .main-images img:hover {
+        filter: brightness(80%);
+        -webkit-transform: translate3d(0,0, 0);
+        transform: translate3d(0,0,0);
+    }
+    .main h2 { 
+        position: absolute !important;
+        top: calc(50% - 200px);
+        /* z-index: 14; */
+        left: calc(50% - 300px);
+        font-family: 'Roboto', sans-serif !important;
+        color: white;
+        font-weight: 600;
+        line-height: 1.5;
+        transition: all 0.35s ease-in
+    }
+    .main:hover h2 {
+        opacity: 0.2;
     }
 </style>
 <style>
