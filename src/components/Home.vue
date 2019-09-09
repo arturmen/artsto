@@ -120,6 +120,7 @@ export default {
         left: calc(50% - 300px);
         font-family: 'Roboto', sans-serif !important;
         color: white;
+        pointer-events: none;
         font-weight: 600;
         line-height: 1;
         transition: all 0.35s ease-in

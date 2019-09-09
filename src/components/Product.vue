@@ -8,25 +8,27 @@
             id="small-image"
             v-for="img in images"
             v-bind:key="img.source"
-            v-on:pointerover="image = img.source"
+            v-on:pointerover="image = img"
             v-on:pointerout="image = imageClicked"
             class="mt-2 mx-1"
-            v-on:click.prevent="image = img.source; imageClicked = img.source"
+            v-on:click.prevent="image = img; imageClicked = img"
             :src="require('../' + img.source)"
           /></b-link>
         </div>
       </div>
       <div class="col-5 pt-5 version-big">
         <b-link v-b-modal.modal-img-big>
-            <b-img id="main-img" :title=name class="shadow-lg" :src="require('../' + image)"></b-img>
+            <b-img id="main-img" :title=name class="shadow-lg" :src="require('../' + image.source)"></b-img>
         </b-link>
         <b-modal id="modal-img-big" :hide-header="true" :hide-footer="true">
-            <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image)"></b-img>
+            <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image.source)"></b-img>
         </b-modal>
         <br>
       </div>
       <div class="col-5 py-5 px-5 version-big">
         <h4 id="title">{{name}}</h4>
+        <h4 style="font-size: 20px; border: none;"> Kolor drewna: {{ changeCaseFirstLetter(image.wood) }}</h4>
+        <h4 style="font-size: 20px; border: none;"> Kolor metalu: {{ changeCaseFirstLetter(image.metal) }}</h4>
         <p class="my-3">{{ description }}</p>
         <h4>Kolory drewna:</h4>
         <p class="d-inline mt-3" v-for="wood in woods" v-bind:key="wood.name">
@@ -63,9 +65,9 @@
             id="small-image"
             v-for="img in images"
             v-bind:key="img.source"
-            v-on:pointerover="image = img.source"
+            v-on:pointerover="image = img"
             v-on:pointerout="image = imageClicked"
-            v-on:click.prevent="image = img.source; imageClicked = img.source"
+            v-on:click.prevent="image = img; imageClicked = img"
             :src="require('../' + img.source)"
           /></b-link>
         </div>
@@ -73,11 +75,11 @@
       <div class="col-12 pt-5 version-small">
         <div  style="width: 100vw; max-height: 50vh; overflow-y: scroll;">
         <b-link style="" v-b-modal.modal-img-big>
-            <b-img id="main-img" style="width: 100vw;" :title=name class="shadow-lg" :src="require('../' + image)"></b-img>
+            <b-img id="main-img" style="width: 100vw;" :title=name class="shadow-lg" :src="require('../' + image.source)"></b-img>
         </b-link>
         </div>
         <b-modal id="modal-img-big" :hide-header="true" :hide-footer="true">
-            <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image)"></b-img>
+            <b-img id="modal-img" :title=name rounded class="shadow" :src="require('../' + image.source)"></b-img>
         </b-modal>
         <br>
       </div>
@@ -87,6 +89,7 @@
         <p class="d-inline mt-3" v-for="wood in woods" v-bind:key="wood.name">
           <b-link><b-img
             class="mb-3 mx-1 img-material"
+            :title=wood.name
             :src="require('../' + wood.thumbnail)"
             v-on:click="onWoodClick(wood.name, true)"
             v-on:pointerover="onWoodClick(wood.name, false)"
@@ -189,18 +192,18 @@ export default {
         for(var img in this.$props.myJson.content.products[this.id].images.all){
           if(this.$props.myJson.content.products[this.id].images.all[img].wood === this.$route.params.colour){
             
-            this.image = this.$props.myJson.content.products[this.id].images.all[img].source
+            this.image = this.$props.myJson.content.products[this.id].images.all[img]
           }
         }
-      if(this.image === "") this.image = this.$props.myJson.content.products[this.id].images.all[0].source
+      if(this.image === "") this.image = this.$props.myJson.content.products[this.id].images.all[0]
       this.imageClicked = this.image
     },
     onWoodClick(attribute,click) {
       var images = this.$props.myJson.content.products[this.id].images.all;
       for (var i in images) {
         if (images[i].wood === attribute) {
-          this.image = images[i].source;
-          if(click) this.imageClicked = images[i].source;
+          this.image = images[i];
+          if(click) this.imageClicked = images[i];
         }
       }
     },
@@ -208,10 +211,16 @@ export default {
       var images = this.$props.myJson.content.products[this.id].images.all;
       for (var i in images) {
         if (images[i].metal === attribute) {
-          this.image = images[i].source;
-          if(click) this.imageClicked = images[i].source;
+          this.image = images[i];
+          if(click) this.imageClicked = images[i];
         }
       }
+    },
+    changeCaseFirstLetter(params) {
+      if(typeof params === 'string') {
+        return params.charAt(0).toUpperCase() + params.slice(1);
+      }
+      return null;
     }
   },
   mounted() {

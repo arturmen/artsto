@@ -22,7 +22,7 @@
                     <div class="desc desc-short" >Brązowy</div></div>
             </div>
             <div v-masonry-tile class="item grid-item img-5 img-container" style="position:absolute">
-                <b-link href="/#/product/klepsydra/zielony" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_tempo_porcellana_9.jpg')"></b-img></b-link>
+                <b-link href="/#/product/klepsydra/zielony" ><b-img class="img-5-h" :src="require('../assets/images/products/mlynek_tempo_porcellana_10.jpg')"></b-img></b-link>
                     <div class="centered"><div class="desc desc-long" >Młynek Klepsydra</div>
                     <div class="desc desc-short" >Zielony</div></div>
             </div>
